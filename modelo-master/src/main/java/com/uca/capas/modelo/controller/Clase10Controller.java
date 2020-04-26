@@ -51,28 +51,28 @@ public class Clase10Controller {
 		String estudianteCorrecto = "Estudiante ingresado con éxito";
 		
 		
-		if(nombre.length()<1 || nombre.length()>25) { 
+		if(nombre.length()<1 || nombre.length()>25 || nombre== null ) { 
 			estudiante.add("el nombre debe ser mínimo 1 caracter, máximo 25");
 		}
 		
-		if(apellido.length()<1 || apellido.length()>25) {
+		if(apellido.length()<1 || apellido.length()>25 || apellido== null ) {
 			estudiante.add("el apellido debe ser mínimo 1 caracter, máximo 25");
 		}
 		
-		if(d1.compareTo(d2)<0) {
+		if(d1.compareTo(d2)<0 || d1== null ) {
 			estudiante.add("la fecha no puede ser menor al 1 de enero de 2003");
 		} 
 		
-		if(lugarnaci.length()<1 || lugarnaci.length()>25) {
+		if(lugarnaci.length()<1 || lugarnaci.length()>25 || lugarnaci== null ) {
 			estudiante.add("el lugar de nacimiento debe ser mínimo 1 carácter y máximo 25 caracteres");
 		}
-		if(colegio.length()<1 || colegio.length()>100) {
+		if(colegio.length()<1 || colegio.length()>100 || colegio== null ) {
 			estudiante.add("el colegio debe ser mínimo 1 carácter y máximo 100 caracteres");
 		}
-		if(tel.length()!= 8) {
+		if(tel.length()!= 8 || tel== null ) {
 			estudiante.add("el telefono debe tener 8 números exactamente");
 		}
-		if(cel.length()!= 8) {
+		if(cel.length()!= 8 || cel== null ) {
 			estudiante.add("el celular debe ser 8 números exactamente");
 		}
 	
